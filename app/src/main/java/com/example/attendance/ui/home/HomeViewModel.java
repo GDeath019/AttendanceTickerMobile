@@ -12,13 +12,16 @@ import com.example.attendance.MainActivity;
 
 import java.util.ArrayList;
 
+import com.example.attendance.CalendarQuickstart;
+
 public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
     private ListView listView;
     public HomeViewModel() {
+        CalendarQuickstart c = new CalendarQuickstart();
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue(c.tesst());
     }
     public LiveData<String> getText() {
         return mText;
