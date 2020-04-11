@@ -34,6 +34,7 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
         holder.txt1.setText(dataShops.get(position).getTxt1());
         holder.txt2.setText(dataShops.get(position).getTxt2());
         holder.txt3.setText(dataShops.get(position).getTxt3());
+        holder.txtMonHoc.setText(dataShops.get(position).getTxtMonHoc());
     }
 
     @Override
@@ -46,12 +47,13 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView txt1,txt2,txt3;
+        TextView txt1,txt2,txt3,txtMonHoc;
         public ViewHolder(final View itemView){
             super(itemView);
             txt1 = (TextView)itemView.findViewById(R.id.tvCustom1);
             txt2 = (TextView)itemView.findViewById(R.id.tvCustom2);
             txt3 = (TextView)itemView.findViewById(R.id.tvCustom3);
+            txtMonHoc = (TextView)itemView.findViewById(R.id.monHocCustom);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

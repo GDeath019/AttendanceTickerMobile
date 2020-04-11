@@ -9,36 +9,81 @@
 
     <TextView
         android:id="@+id/tvCustom1"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="87dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvCustom2"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
+        android:layout_width="87dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="28dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCustom1" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCustom1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tvCustom3"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="52dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/tvCustom1"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/monHocCustom"
+        android:layout_width="81dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        app:layout_constraintStart_toEndOf="@+id/monHocCustom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="36dp"
+        android:text="Finish"
+        app:layout_constraintStart_toEndOf="@+id/monHocCustom"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Địa Điểm"
+        app:layout_constraintBottom_toTopOf="@+id/tvCustom3"
+        app:layout_constraintStart_toEndOf="@+id/tvCustom1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

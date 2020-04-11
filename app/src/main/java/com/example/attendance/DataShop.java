@@ -1,12 +1,21 @@
 package com.example.attendance;
 
 public class DataShop {
-    private String txt1,txt2,txt3;
+    private String txt1,txt2,txt3,txtMonHoc;
 
-    public DataShop(String txt1, String txt2, String txt3) {
+    public DataShop(String txt1, String txt2, String txt3, String txtMonHoc) {
         this.txt1 = txt1;
         this.txt2 = txt2;
         this.txt3 = txt3;
+        this.txtMonHoc = txtMonHoc;
+    }
+
+    public String getTxtMonHoc() {
+        return txtMonHoc;
+    }
+
+    public void setTxtMonHoc(String txtMonHoc) {
+        this.txtMonHoc = txtMonHoc;
     }
 
     public String getTxt1() {

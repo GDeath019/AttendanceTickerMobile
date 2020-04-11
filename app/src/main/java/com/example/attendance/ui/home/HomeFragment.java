@@ -5,12 +5,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -19,8 +18,6 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.attendance.CalendarQuickstart;
 
 import com.example.attendance.DataShop;
 import com.example.attendance.R;
@@ -45,7 +42,7 @@ public class HomeFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.VERTICAL,false);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL);
-        Drawable drawable = ContextCompat.getDrawable(getActivity(),R.drawable.custom_divider);
+        Drawable drawable = ContextCompat.getDrawable(getActivity(),R.drawable.divider_custom);
         dividerItemDecoration.setDrawable(drawable);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(dividerItemDecoration);
@@ -59,22 +56,21 @@ public class HomeFragment extends Fragment {
 
                 if(i2 == 15){
                     ArrayList<DataShop> arrayList = new ArrayList<>();
-                    arrayList.add(new DataShop("sk ngày 15","sk ngày 15","sk ngày 15"));
-                    arrayList.add(new DataShop("sk ngày 15 1","sk ngày 15 1","sk ngày 15 1"));
-                    arrayList.add(new DataShop("sk ngày 15 2","sk ngày 15 2","sk ngày 15 2"));
-                    arrayList.add(new DataShop("sk ngày 15 3","sk ngày 15 3","sk ngày 15 3"));
+                    arrayList.add(new DataShop("09:30AM","12AM","103-A2","ATBMTT"));
+                    arrayList.add(new DataShop("13 PM","15:30 PM","102-A2","Web"));
+                    arrayList.add(new DataShop("15:30 PM","18:00 PM","102-A2","LTM"));
                     ShopAdapter shopAdapter = new ShopAdapter(arrayList,getActivity());
                     recyclerView.setAdapter(shopAdapter);
                 }
                 if(i2 == 13){
                     ArrayList<DataShop> arrayList = new ArrayList<>();
-                    arrayList.add(new DataShop("sk ngày 13","sk ngày 13","sk ngày 13"));
+                    arrayList.add(new DataShop("sk ngày 13","sk ngày 13","sk ngày 13","sk ngày 15"));
                     ShopAdapter shopAdapter = new ShopAdapter(arrayList,getActivity());
                     recyclerView.setAdapter(shopAdapter);
                 }
                 if(i2 == 20){
                     ArrayList<DataShop> arrayList = new ArrayList<>();
-                    arrayList.add(new DataShop("sk ngày 20","sk ngày 20","sk ngày 20"));
+                    arrayList.add(new DataShop("sk ngày 20","sk ngày 20","sk ngày 20","sk ngày 15"));
                     ShopAdapter shopAdapter = new ShopAdapter(arrayList,getActivity());
                     recyclerView.setAdapter(shopAdapter);
                 }
